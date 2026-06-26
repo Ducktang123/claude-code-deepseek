@@ -1,0 +1,69 @@
+============================================================
+   Claude Code + DeepSeek  安装包（macOS 版）  使用说明
+------------------------------------------------------------
+   作者：不要口嗨 —— 一个掌握 AI 使用技巧的中登文科生
+   有问题随时找我，欢迎来到 AI 的世界
+   抖音号：1532422321        微信号：ducktangsir
+============================================================
+
+【这是什么】
+  让 Claude Code（命令行 AI 编程助手）使用 DeepSeek 模型的一键安装包。
+  全程使用国内镜像（npmmirror / 清华），国内网络可直接安装，无需梯子。
+  适用：macOS 11 及以上，Intel 芯片与 Apple 芯片（M1/M2/M3...）都可以。
+
+【安装步骤】
+  1. 把整个文件夹拷到任意位置（路径最好不含特殊字符）。
+  2. 双击【安装.command】。
+       ★ 第一次双击若提示“无法打开，因为来自身份不明的开发者”：
+         打开「系统设置 → 隐私与安全性」，在下方点【仍要打开】；
+         或者打开「终端」，把文件夹拖进去后运行：  bash install.sh
+  3. 按提示操作：
+       - 自动检测/安装 Homebrew + Node.js（可能要你输入 Mac 登录密码）
+       - 自动安装 Claude Code
+       - 输入你的 DeepSeek API Key（去 https://platform.deepseek.com 创建）
+       - 自动写入环境变量、安装技能
+  4. 看到“安装完成”后，关闭所有终端窗口。
+
+【开始使用】
+  1. 新开一个「终端」窗口。
+  2. 进入任意项目文件夹，输入：  claude
+  3. 在 claude 里输入  /  可以看到所有技能，输入 /名称 调用。
+
+【已包含的技能】（共 12 个）
+  编程类 : code-review(代码审查) debug(调试) explain-code(讲解代码)
+           write-tests(写测试) git-commit(生成提交信息)
+  文档类 : docx(Word) xlsx(Excel) pptx(PPT) pdf(PDF)
+  写作类 : tech-writing(技术文档) markdown-format(Markdown 排版)
+  中文类 : translate-zh(中英翻译)
+  注：文档类技能需要本机有 Python3（脚本会尝试自动安装）。
+
+【使用的模型】
+  主力模型 : deepseek-v4-pro
+  快速模型 : deepseek-v4-flash
+
+【常见问题 / 报错速查】
+
+  ① 双击没反应 / 提示“身份不明的开发者”
+     → 系统设置 → 隐私与安全性 → 点【仍要打开】；
+       或在终端里运行：  bash install.sh
+
+  ② npm 一直卡住，或报错含 proxy / ECONNREFUSED
+     原因：开着加速器 / VPN，代理拦截了 npm。
+     解决：先关掉加速器 / VPN，再重新运行【安装.command】。
+
+  ③ claude 里发消息报 "API Error: 400"
+     原因：DeepSeek API Key 没填对（多了空格或没粘上）。
+     自查：新开终端运行：  echo -n "$ANTHROPIC_AUTH_TOKEN" | wc -c   （正常约 35）
+     解决：重新运行【安装.command】重新粘贴即可。
+
+  ④ claude 报 401 / Authentication Fails
+     原因：key 错、失效，或账户没充值（DeepSeek 无免费额度）。
+     解决：去 platform.deepseek.com 确认 key 正确、账户已充值。
+
+  ⑤ 输入 claude 提示找不到命令（command not found）
+     原因：环境变量只对“新开的”终端生效。
+     解决：关闭所有终端窗口，重新开一个再试；仍不行就重跑【安装.command】。
+
+  ★ 黄金法则：改完任何配置，一律“关掉所有终端 → 重新开一个”再测。
+
+============================================================

@@ -1,0 +1,8 @@
+# 保证脚本换行符正确，避免 Windows 检出后破坏 bash 脚本
+*.sh        text eol=lf
+*.command   text eol=lf
+*.ps1       text eol=crlf
+*.bat       text eol=crlf
+
+# zip 等二进制文件
+*.zip       binary
