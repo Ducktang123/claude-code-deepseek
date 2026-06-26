@@ -166,6 +166,14 @@ Especially welcome: more Chinese skills, a Linux installer, and adapters for oth
 
 ---
 
+## 📈 Star history
+
+If this project helped you, a ⭐ adds a point to this line —
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Ducktang123/claude-code-deepseek&type=Date)](https://star-history.com/#Ducktang123/claude-code-deepseek&Date)
+
+---
+
 ## 👤 Author
 
 **不要口嗨 (Ducktang)** — sharing tools and tricks that make AI approachable for everyone.

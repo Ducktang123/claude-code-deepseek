@@ -193,6 +193,14 @@ Key 错、失效，或账户没充值（DeepSeek 无免费额度）。去 platfo
 
 ---
 
+## 📈 Star 趋势
+
+如果这个项目帮到了你，点个 ⭐ 就是在这条线上添一笔～
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Ducktang123/claude-code-deepseek&type=Date)](https://star-history.com/#Ducktang123/claude-code-deepseek&Date)
+
+---
+
 ## 📂 目录结构
 
 ```
