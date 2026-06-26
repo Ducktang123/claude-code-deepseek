@@ -69,6 +69,9 @@ When it's done, **close all terminal windows**, open a new one, `cd` into any pr
 claude
 ```
 
+> 🧭 **The first run asks a few questions — don't worry, just hit Enter:**
+> pick a theme → Enter; "Do you trust the files in this folder?" → choose **Yes**; anything else you're unsure about → just press **Enter** for the default. It only asks once.
+
 That's it. Type `/` inside `claude` to see all skills.
 
 ---

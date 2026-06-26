@@ -261,7 +261,10 @@ Write-Host @"
 使用方法：
   1) 关闭当前所有终端窗口（让环境变量生效）
   2) 新开终端，进入任意项目文件夹，输入：  claude
-  3) 在 claude 里输入 /  可查看已安装技能
+  3) ★ 第一次运行 claude 会问几个问题（选主题、是否信任当前文件夹等）：
+       不用纠结——一路按【回车】选默认即可；
+       遇到「是否信任此文件夹 / trust」选【Yes / 信任】。
+  4) 进入后，在 claude 里输入 /  可查看已安装技能
 
 已安装技能（/ + 名称 调用）：
   编程类 : code-review  debug  explain-code  write-tests  git-commit
