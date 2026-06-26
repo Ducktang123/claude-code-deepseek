@@ -8,7 +8,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-blue)](#-支持平台)
 [![Mirror](https://img.shields.io/badge/国内镜像-npmmirror%20%2F%20清华源-orange)](#)
-[![Model](https://img.shields.io/badge/模型-DeepSeek-7C3AED)](https://platform.deepseek.com)
+[![Model](https://img.shields.io/badge/模型-DeepSeek%20V4%20(1M%20上下文)-7C3AED)](https://platform.deepseek.com)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](#-参与共建)
 
@@ -28,7 +28,7 @@
 
 - ✅ **不用梯子**：Node.js、Claude Code、Python 依赖全走国内镜像（npmmirror / 清华源）。
 - ✅ **不用配置**：自动装环境、自动写好环境变量，你只需要粘贴一个 DeepSeek API Key。
-- ✅ **便宜**：用 DeepSeek 的价格，体验 Claude Code 的能力。
+- ✅ **便宜又强**：用 DeepSeek 的价格，体验 Claude Code 的能力。默认就用最新的 **DeepSeek V4**（`v4-pro` / `v4-flash`），**100 万 token 超长上下文**、支持思考/非思考双模式。
 - ✅ **中文友好**：内置 12 个开箱即用的中文技能（skills），说人话就能调用。
 - ✅ **双平台**：Windows 和 macOS（Intel / Apple 芯片）都支持。
 
@@ -112,16 +112,16 @@ claude
 
 1. 没有 Node.js 就从国内镜像装一个；
 2. 用 npmmirror 安装官方 `@anthropic-ai/claude-code`；
-3. 写入 4 个环境变量，让 Claude Code 指向 DeepSeek：
+3. 写入 4 个环境变量，让 Claude Code 指向 DeepSeek 最新的 **V4** 模型：
    ```bash
    ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
    ANTHROPIC_AUTH_TOKEN=<你的 DeepSeek Key>
-   ANTHROPIC_MODEL=deepseek-v4-pro
-   ANTHROPIC_SMALL_FAST_MODEL=deepseek-v4-flash
+   ANTHROPIC_MODEL=deepseek-v4-pro            # 主力：强推理，适合编码/复杂任务
+   ANTHROPIC_SMALL_FAST_MODEL=deepseek-v4-flash   # 小任务：快
    ```
 4. 把 `skills/` 复制到 `~/.claude/skills`。
 
-> 💬 想换模型？把上面 `ANTHROPIC_MODEL` / `ANTHROPIC_SMALL_FAST_MODEL` 改成你账号可用的 DeepSeek 模型名即可（不同时期 DeepSeek 提供的模型名可能不同，以 [官方文档](https://platform.deepseek.com) 为准），然后重开终端。
+> 💬 默认已经是最新的 **DeepSeek V4**（`v4-pro` / `v4-flash`，100 万上下文）。想换别的模型，把上面两个变量改成你账号可用的模型名再重开终端即可，可用列表见 [DeepSeek 官方文档](https://platform.deepseek.com)。
 
 ---
 
