@@ -6,6 +6,8 @@
 
 国内网络直连 · 无需梯子 · 双击安装 · 自带 12 个中文技能
 
+**简体中文** ｜ [English](README.en.md)
+
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-blue)](#-支持平台)
 [![Mirror](https://img.shields.io/badge/国内镜像-npmmirror%20%2F%20清华源-orange)](#)
 [![Model](https://img.shields.io/badge/模型-DeepSeek%20V4%20(1M%20上下文)-7C3AED)](https://platform.deepseek.com)
@@ -35,6 +37,22 @@
 > 适合：想白嫖 Claude Code 强大体验、又不想折腾环境的国内开发者、学生、AI 爱好者。
 
 ---
+
+## 🎬 演示
+
+**一键安装（双击即可，全程自动）：**
+
+![安装演示](assets/demo-install.svg)
+
+**装好后在 `claude` 里直接用中文技能：**
+
+![技能演示](assets/demo-skill.svg)
+
+> 📷 想看真实录屏？欢迎把你的安装/使用截图或 GIF 发我，我会放到这里。
+> （贡献者也可以把素材放进 `assets/` 并提 PR）
+>
+> <!-- 真实 GIF 占位：把录好的 demo.gif 放进 assets/，然后取消下一行注释 -->
+> <!-- ![真实录屏](assets/demo.gif) -->
 
 ## 🚀 三步上手
 

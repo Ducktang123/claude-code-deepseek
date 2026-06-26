@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="460" viewBox="0 0 860 460" font-family="'JetBrains Mono','Cascadia Code',Consolas,'PingFang SC','Microsoft YaHei',monospace" font-size="15">
+  <rect x="0" y="0" width="860" height="460" rx="12" fill="#1e1e2e"/>
+  <rect x="0" y="0" width="860" height="36" rx="12" fill="#313244"/>
+  <rect x="0" y="24" width="860" height="12" fill="#313244"/>
+  <circle cx="22" cy="18" r="6" fill="#f38ba8"/>
+  <circle cx="44" cy="18" r="6" fill="#f9e2af"/>
+  <circle cx="66" cy="18" r="6" fill="#a6e3a1"/>
+  <text x="430" y="23" text-anchor="middle" fill="#9399b2" font-size="13">claude — 用 /code-review 技能审查代码</text>
+  <g>
+    <text x="24" y="70" fill="#cdd6f4">$ <tspan fill="#a6e3a1">claude</tspan></text>
+    <text x="24" y="100" fill="#89b4fa">&gt; /code-review</text>
+    <text x="24" y="134" fill="#9399b2">读取改动 git diff … 发现 3 处问题（按严重程度排序）：</text>
+    <text x="24" y="168" fill="#f9e2af">1. utils.py:42  · Bug</text>
+    <text x="44" y="190" fill="#cdd6f4">data 可能为 None，data["id"] 会抛 KeyError → 先判空再取值</text>
+    <text x="24" y="222" fill="#f38ba8">2. api.py:88   · 安全</text>
+    <text x="44" y="244" fill="#cdd6f4">硬编码的密钥泄露风险 → 改为读取环境变量</text>
+    <text x="24" y="276" fill="#89dceb">3. main.py:15  · 可简化</text>
+    <text x="44" y="298" fill="#cdd6f4">与 main.py:30 重复逻辑，可抽成一个函数复用</text>
+    <text x="24" y="332" fill="#9399b2">没发现其它明显问题。需要我直接帮你改吗？</text>
+    <text x="24" y="372" fill="#a6e3a1">✓ 审查完成 · 模型 deepseek-v4-pro · 100 万上下文</text>
+    <text x="24" y="412" fill="#89b4fa">&gt; <tspan fill="#6c7086">把这份 Word 提取成文字 / 给 utils.py 写单元测试 …</tspan><tspan fill="#6c7086"> ▌</tspan></text>
+  </g>
+</svg>
