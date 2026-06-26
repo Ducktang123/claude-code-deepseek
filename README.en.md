@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐤 Claude Code + DeepSeek One-Click Installer
+# 🐤 Claude Code + DeepSeek — Dead-Simple One-Click Installer
 
 **Run [Claude Code](https://github.com/anthropics/claude-code), the best AI coding CLI, on the fast and affordable DeepSeek models.**
 

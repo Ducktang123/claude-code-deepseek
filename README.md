@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐤 Claude Code + DeepSeek 一键安装包
+# 🐤 Claude Code + DeepSeek 一键傻瓜式安装
 
 **让全球最强的 AI 编程命令行工具 [Claude Code](https://github.com/anthropics/claude-code)，跑在又便宜又好用的 DeepSeek 模型上。**
 
